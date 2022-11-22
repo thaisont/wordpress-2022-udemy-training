@@ -1,0 +1,14 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Description:  Twenty Twenty Child Theme
+ Author:       Thai Truong
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentytwentychild
+*/
+
+.site-content-contain {
+  background: pink;
+}

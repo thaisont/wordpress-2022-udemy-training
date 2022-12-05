@@ -2,12 +2,14 @@
 
     <header class="entry-header">
 
-        <h1><?php esc_html_e("404", "wphierarchy") ?></h1>
+        <h1><?php esc_html_e("404 - Page not found", "wphierarchy") ?></h1>
 
     </header>
 
     <div class="entry-content">
-        <p><?php esc_html_e("Sorry, no content found123", "wphierarchy") ?></p>
+        <p><?php esc_html_e("Sorry, no content found", "wphierarchy") ?></p>
+
+        <p><?php echo get_search_form(); ?> </p>
     </div>
 
 </article>

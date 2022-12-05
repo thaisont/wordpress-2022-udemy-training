@@ -1,17 +1,13 @@
 /*
 Theme Name: WP Hierarchy
-Author: Thai Truong
-Description: Demo theme for learning the WP template hierarchy
-Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: Zac Gordon
+Author URI: https://zacgordon.com/
+Description: Demo theme for learning the WordPress Template Hierarchy
 Version: 1.0
-Requires at least: 5.0
-Tested up to: 5.4
-Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wphierarchy
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 Lorem to the longer descriptionum.
 */
@@ -22,8 +18,12 @@ body {
 }
 
 body.tag-50,
-body.category-7 {
+body.category-9 {
   background-color: #a7ff91;
+}
+
+body.postid-1301 {
+  background-color: #ab8bed;
 }
 
 h1,
@@ -51,6 +51,10 @@ h2.search-title {
 a {
   color: #494329;
   text-decoration: none;
+}
+
+#content a {
+  text-decoration: underline;
 }
 
 pre {
@@ -168,6 +172,7 @@ footer.site-footer {
 
 article.post {
   margin-bottom: 4rem;
+  clear: both;
 }
 
 .author article.post {
@@ -186,8 +191,13 @@ article.post {
   float: right;
 }
 
-.archive article.portfolio:nth-child(even) {
+.archive article.portfolio {
   margin-right: 5%;
+}
+
+.tax a {
+  display: inline-block;
+  margin: 0 2px;
 }
 
 .form-submit input#submit,
@@ -214,12 +224,11 @@ article.post {
 .home #secondary {
   width: 100%;
   clear: both;
-  display: flex;
 }
 
 .home #secondary .widget {
   width: 30%;
-  clear: left;
+  float: left;
 }
 
 #secondary h2 {

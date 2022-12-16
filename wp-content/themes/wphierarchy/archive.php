@@ -5,7 +5,7 @@
     <main id="main" class="site-main" role="main">
 
         <div class="author-bio">
-            <h1><?php the_archive_title('') ?></h1>
+            <h1><?php single_term_title('') ?></h1>
         </div>
 
         <?php if (have_posts()) : while (have_posts()) : the_post();  ?>

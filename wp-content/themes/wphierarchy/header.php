@@ -37,7 +37,9 @@
                 <?php
 
                 $args = [
-                    'theme_location' => 'main-menu'
+                    'theme_location' => 'main-menu',
+                    // Assign a default menu to location
+                    'menu' => 'Main Menu',
                 ];
 
                 wp_nav_menu($args) ?>
